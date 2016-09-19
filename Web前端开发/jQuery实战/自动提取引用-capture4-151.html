@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>自动提取引用</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/site.css" />
+		<style>
+			.pullQuote {
+				font-size: 18px;
+				color: greenyellow;
+				float: right;
+				display: block;
+				width: 200px;
+				background: lightpink;
+				border: 1px solid red;
+				margin: 20px 0 10px 10px;
+				padding: 10px;
+				clear: right;
+			}
+			#open {
+				color: red;
+			}
+			#open.close {
+				color: blue;
+			}
+			#login-content {
+				margin-left: 30px;
+			}
+		</style>
+		<script>
+			$(function() {
+								$('span.pq').each(function() {
+									//						alert('ddd');
+									var quote = $(this).clone();
+									quote.removeClass('pq');
+									quote.addClass('pullQuote');
+									$(this).before(quote);
+									//						quote.css('color', 'red');
+								}); // end each
+				//								test();
+				
+				$('h1').click(function() {
+					$('h2').toggle(
+						function() {
+//							var n = $(this);
+//							if(n) {
+//								$('.main p').css('color', 'magenta');
+//							} else {
+//								$('.main p').css('color', 'white');
+//							};
+							$(this).css('color', 'green');
+							$('h1').css('color', 'yellow');
+						});
+				});
+				$('h1').hover(function() {
+						$(this).css('color', 'red');
+					},
+					function() {
+						$('h1').css('color', 'blue');
+					});
+				//$('h2').hide();
+				//				$('h2').toggle(function() {
+				//						$('p').hide();
+				//					});
+
+				//				$('h1').click(function(evt) {
+				//					var x = evt.pageX;
+				//					var y = evt.pageY;
+				//					alert(x +':'+ y);
+				//					$('h2').toggle();
+				//				});
+
+				function test() {
+					$('h1').toggle(function() {
+							$('h2').hide();
+							//						alert('草泥马');
+						},
+						function() {
+							$('h2').show();
+							//						alert('滚犊子');
+						});
+				}; // end test
+				/* 控制登录 */
+				$('#open').click(function() {
+					$('#login-content form').slideToggle(200);
+					$(this).toggleClass('close');
+				});
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="pages-wrap">
+			<div class="header">
+				<p class="logo">JavaScript<i>&amp;</i>jQuery<i class="mm">The<br /> brand <br />title</i></p>
+			</div>
+			<div id="login-content">
+				<p id="open">Login</p>
+				<form>
+					<p>
+					<label for="username">Username</label>
+					<input type="text" id="username" />
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input type="password" id="password" />
+					</p>
+				</form>
+			</div>
+			<div class="content">
+				<div class="main">
+					<!--内容主体-->
+					<h1>Auto-Pull Quotes</h1>
+					<h2>111111cheshibiaotiyi</h2>
+					<p>Perceived end knowledge certainly day sweetness why cordially. Ask quick six seven offer see among. Handsome met debating sir dwelling age material. As style lived he worse dried. Offered related so visitor we private removed. Moderate do subjects to distance.</p>
+					<h2>222222cheshibiaoti2</h2>
+					<p>Those an equal point no years do. Depend warmth fat but her but played.<span class="pq"> Shy and subjects wondered trifling pleasant.</span> Prudent cordial comfort do no on colonel as assured chicken. mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at estimating. Man behaviour met moonlight extremity acuteness direction.</p>
+					<h2>333333chehsibiaoti3</h2>
+					<p>Two exquisite objection delighted <span class="pq">dhsajdkhsakdjdeficient yet its contained.</span> Cordial because are account evident its subject but eat. Can properly followed learning prepared you doubtful yet him. Over many our good lady feet ask that. Expenses own moderate day fat trifling stronger sir domestic feelings. Itself at be answer always exeter up do. Though or my plenty uneasy do. Friendship so considered remarkably be to sentiments. Offered mention greater fifteen one promise because nor. Why denoting speaking fat indulged saw dwelling raillery.</p>
+					<h2>测试区域</h2>
+					<p>回复就看哈电视剧看似fbdbljskla受打击爱打瞌睡大都看见爱上大空间很大空间是的哈谁看见的哈萨克的骄傲和</p>
+				</div>
+				<div class="footer">
+					<!--页脚内容-->
+					<p>huangmoumou&amp;hhx by
+						<a href="http://www.baidu.com/" style="color: magenta;">草泥马</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,21 @@
+@import "reset.css";
+@import "button.css";
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(45deg, #ea702e 0%, #f2be30 5%, #ddd42c 8%, #46ef2f 13%, #25edcf 20%, #1fbec6 28%, #4128d3 39%, #5220c9 53%, #981fc4 65%, #c11f62 80%, #d62439 91%, #7db9e8 100%);
+}
+
+a:link,
+a:visited {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #7b7b7b;
+}

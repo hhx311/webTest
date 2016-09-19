@@ -1,0 +1,12 @@
+#textarea {
+	position: relative;
+	/*display: block;*/
+}
+
+#submit {
+	display: block;
+	position: absolute;
+	/*left: 100px;*/
+	background-color: red;
+	margin: 0 auto;
+}

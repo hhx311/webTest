@@ -1,0 +1,19 @@
+#page-right {
+    display: inline;
+    float: right;
+    margin: 0;
+}
+#carouselcontainer .item img {
+    margin: 0 auto;
+    /*width: 30%;*/
+}
+
+#carouselcontainer {
+    /*background-color: blue;*/
+}
+#carouselcontainer:hover .carousel-indicators,#carouselcontainer:hover .carousel-control{
+    opacity: 1;
+}
+#carouselcontainer .carousel-indicators, #carouselcontainer .carousel-control {
+    opacity: 0;
+}

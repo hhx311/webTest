@@ -1,0 +1,49 @@
+@import "reset.css";
+
+body {
+	background: #eeece7;
+}
+
+h1 {
+	font: 40px/1.2 'helvetica';
+	color: #a4834d;
+	text-align: center;
+}
+
+h1+p {
+	color: lightslategrey;
+	margin-bottom: 1.5em;
+}
+
+#page-wrap {
+	width: 960px;
+	margin: 30px auto;
+	padding: 3em;
+	background: #fff;
+	box-shadow: 5px 5px 2px #62615f inset;
+	border-radius: 20px;
+}
+
+#navigation {
+	padding: 5px;
+}
+
+#navigation li{
+	float: left;
+	border-right: 1px solid #eee;
+}
+#navigation li:last-child {
+	border: 0;
+}
+#navigation li a {
+	border: 0;
+	padding: 10px;
+	font: 14px/1.1 '微软雅黑';
+	color: blue;
+}
+
+#navigation li a:hover {
+	border-radius: 6px;
+	background-image: linear-gradient(-45deg,yellow,red);
+	box-shadow: 3px 3px 2px #62615F inset;
+}

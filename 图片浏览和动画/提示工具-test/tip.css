@@ -1,0 +1,27 @@
+html, body {
+	background-color: #333;
+}
+
+#content {
+	line-height: 1.5em;
+	margin: auto 30px;
+	padding: 10px 20px ;
+	background-color: lightgoldenrodyellow;
+	font-size: 20px;
+}
+
+span.trigger {
+	border-bottom: 2px dashed magenta;
+}
+
+span.trigger:hover {
+	color: red;
+	cursor: help;
+}
+.tipTool {
+	background-color: #D3D3D3;
+	border: 10px solid blue;
+	padding: 5px;
+	border-radius: 5px;
+	display: block;
+}

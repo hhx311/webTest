@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单验证</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery.validate.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
+	</head>
+	<body>
+		<div id="form_validate">
+			<h2>Signup</h2>
+			<form action="process.html" method="post" name="signup" id="signup">
+				<div>
+					<label for="name" class="label">Name</label>
+					<input type="text" id="name" class="required" name="name" title="Please input your name!" />
+				</div>
+				<div>
+					<label for="E-mail" class="label">E-mail Address</label>
+					<input type="email" id="E-mail" name="E-mail" title="Input your email." />
+				</div>
+				<div>
+					<label for="password" class="label">Password</label>
+					<input type="password" id="password" class="required" name="password" title="Input password." />
+				</div>
+				<div>
+					<label for="confirm_password" class="label">Confirm Password</label>
+					<input type="password" id="confirm_password" class="required" name="confirm_password" title="Input password again!" />
+				</div>
+				<div>
+					<label class="label">Hobbies</label>
+					<input type="checkbox" name="hobby" id="heli-skiing" value="heli-skiing" class="required" title="Please check at least one hobby!" />
+					<label for="heli-skiing">Heli-skiing</label>
+					<input type="checkbox" id="pickle-eating" name="hobby" value="pickle-eating"/>
+					<label for="pickle-eating">Pickle eating</label>
+					<input type="checkbox" id="walnut" name="hobby" value="walnut"/>
+					<label for="walnut">Making walnut butter</label>
+				</div>
+				<div>
+					<label for="birth" class="label">Date of birth</label>
+					<input type="date" id="birth" name="birth" class="date required" title="Please type your date of birth using this format: 01/19/2000" />
+				</div>
+				<div>
+					<label for="planet" class="label">Planet of birth</label>
+					<select id="planet">
+						<option value="">--Please select one--</option>
+						<option value="a">aaa</option>
+						<option value="b">bbb</option>
+						<option value="c">ccc</option>
+					</select>
+				</div>
+				<div>
+				<label for="comments" class="label">Comments</label>
+				<textarea id="comments" name="comments" rows="6" cols="20" placeholder="请留言..."></textarea>
+				</div>
+				<div>
+					<p class="block">Would you like to receive annoying E-mail from us?</p>
+				</div>
+				<div>
+					<input type="radio" name="spam" id="yes" value="yes" class="required" title="Please select an option" />
+					<label for="yes">Yes</label>
+					<input type="radio" name="spam" id="definitely" value="definitely" />
+					<label for="definitely">Definitely</label>
+					<input type="radio" name="spam" id="other-choice" value="other-choice"/>
+					<label for="other-choice">Do I have a choice</label>
+				</div>
+				<div>
+					<input type="submit" name="submit" value="Submit" id="submit" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+@import "reset.css";
+.tabs .tab_menu ul {
+  list-style-type: none;
+}
+.tabs .tab_menu li {
+  position: relative;
+  float: left;
+  margin-right: 2px;
+}
+.tabs .tab_menu li a {
+  text-decoration: none !important;
+  display: block;
+  padding: .5em 1.5em;
+  background: #e5e9ea;
+  color: #607291;
+  font-size: 16px;
+  -webkit-border-radius: 7px 7px 0 0;
+  -khtml-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tabs .tab_menu li:hover a,
+.tabs .tab_menu li.active a {
+  padding-left: 2.2em;
+  padding-right: 0.8em;
+  background: #f9f9f9;
+  -webkit-box-shadow: 1px -1px 2px #5c5c5c;
+  -moz-box-shadow: 1px -1px 2px #5c5c5c;
+  box-shadow: 1px -1px 2px #5c5c5c;
+}
+.tabs .tab_menu li img {
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tabs .tab_menu li:hover img,
+.tabs .tab_menu li.active img {
+  opacity: 1;
+  left: 6px;
+}
+.tabs .tab_contents {
+  position: relative;
+  min-height: 144px;
+  padding: 2em;
+  color: #607291;
+  background: #f9f9f9;
+  -webkit-box-shadow: 2px 2px 2px #5c5c5c;
+  -moz-box-shadow: 2px 2px 2px #5c5c5c;
+  box-shadow: 2px 2px 2px #5c5c5c;
+}
+.tabs .tab_contents ul {
+  list-style-type: none;
+}
+.tabs .tab_contents img {
+  float: left;
+  margin-right: 10px;
+}
+.tabs .tab_contents li {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 95%;
+  margin-bottom: 0;
+  border-bottom: 0;
+  opacity: 0;
+}
+.tabs .tab_contents li.active {
+  opacity: 1;
+  z-index: 10;
+}
+.tabs .tab_menu {
+  position: relative;
+  display: inline-block;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: "helvetica";
+  background: #77807f url("../img/wood_bg.jpg") center top;
+  color: #fff;
+}
+a:link,
+a:visited {
+  color: #fff;
+}
+#page-wrap {
+  width: 740px;
+  margin: 100px auto;
+}
+h1 {
+  margin-bottom: 1.5em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 2px #111;
+}
+h1 span {
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 5px;
+  font: 14px helvetica;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

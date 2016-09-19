@@ -1,0 +1,25 @@
+
+//设置渐变
+.rainbow-gradient( @deg:45deg, @c1:#ea702e, @c2:#f2be30, @c3:#ddd42c, @c4:#46ef2f, @c5:#25edcf, @c6:#1fbec6, @c7:#4128d3, @c8:red, @c9:gold ) {
+    background: linear-gradient( @deg, @c1 0%, @c2 11%, @c3 22%, @c4 33%, @c5 44%, @c6 55%, @c7 66%, @c8 77%, @c9 90%);
+}
+//设置外阴影效果
+.box-shadow(@x:1px, @y:1px, @blur:1px, @color:#222) {
+    box-shadow: @x @y @blur @color;
+}
+//设置内阴影效果
+.inset-box-shadow(@x:1px, @y:1px, @blur:1px, @color:#222) {
+    box-shadow: @x @y @blur @color inset;
+}
+//按钮颜色渐变效果
+.button-gradient(@bgc:#e5e5e5,@img_url:none,@bs:#fff,@be:#cecece) {
+    background-color: @bgc;
+    background-image: @img_url,linear-gradient(@bs,@be);
+}
+//设置边框圆角效果
+.border-radius(@radius:8px) {
+    border-radius: @radius;
+}
+.transition(@property: all, @duration: .4s, @easing: ease-in, @delay: .3s) {
+    transition: @property @duration @easing @delay;
+}

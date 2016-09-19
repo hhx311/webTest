@@ -1,0 +1,79 @@
+@import "reset.css";
+
+body {
+	padding: 150px;
+	background: url(../img/bg_tile.jpg);
+}
+
+h1 {
+	margin-bottom: 80px;
+	color: red;
+}
+
+a.tooltip {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 5px solid #555;
+	border-radius: 60px;
+	background: white no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+a.tooltip:hover {
+	border-color: antiquewhite;
+}
+
+.nav li {
+	float: left;
+	margin-right: 100px;
+}
+
+a.tooltip.photo1 {
+	background-image: url(../img/sussjini-bbo.jpg);
+}
+a.tooltip.photo2 {
+	background-image: url(../img/interview-yamoo9.png);
+}
+a.tooltip.photo3 {
+	background-image: url(../img/khk-artwork.png);
+}
+
+a.tooltip .tooltip-box {
+	opacity: 0;
+	width: 20em;
+	padding: .8em;
+	background: #111;
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	margin-left: -10.4em;
+	border-radius: 15px 0;
+}
+a.tooltip .tooltip-box:before {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 125px;
+	border-top: 10px solid #111;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+a.tooltip:hover .tooltip-box {
+	opacity: 1;
+	bottom: 90px;
+	transition: all .3s ease-in .5s; 
+}
+
+a.tooltip .tooltip-title {
+	color: magenta;
+}
+
+a.tooltip .tooltip-desc {
+	margin-bottom: 0;
+	font-size: 11px;
+	text-align: justify;
+	color: lightskyblue;
+}
+

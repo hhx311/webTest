@@ -1,0 +1,34 @@
+html,body {
+	background-color: lightgray;
+}
+
+#dashboard {
+	width: 70px;
+	padding: 0 20px 20px 20px;
+	border: 1px solid cyan;
+	background-color: gray;
+	position: absolute;
+	/*z-index: 100;*/
+	left: -92px;
+}
+
+#dashboard img {
+	width: 70px;
+	height: 70px;
+	margin-top: 20px;
+}
+
+#photo_showBox {
+	visibility: hidden;
+	position: relative;
+	background-size: cover;
+	padding: 30px 0 0px 150px;
+}
+
+#photo_showBox img {
+	position: absolute;
+}
+
+#dashboard:hover+#photo_showBox {
+	visibility: visible;
+}
